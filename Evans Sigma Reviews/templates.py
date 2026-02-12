@@ -23,7 +23,7 @@ MOVIE_SUMMARIES = {
     22: "Cars go fast, and they  have race wars or smth (2001).",
     23: "Two bad cops, are selected to return to highschool undercover and bust a drug ring (2012).",
     24: "The Avengers form and fight a evil and tough foe (2012).",
-    25: "In the grim future teenagers are forced to fight each other or smth 2012).",
+    25: "In the grim future teenagers are forced to fight each other or smth (2012).",
     26: "A waste collecting robot gets picked up and becomes the true hero of earth! (2008).",
     27: "The X-Men time travel (2014)."
 }
@@ -154,3 +154,4 @@ def review_card(title, rating, body, author, date):
     </div>
 
     """
+
