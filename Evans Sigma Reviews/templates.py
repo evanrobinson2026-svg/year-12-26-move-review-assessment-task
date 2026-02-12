@@ -4,28 +4,28 @@ MOVIE_SUMMARIES = {
     3: "After a lab accident a scientist becomes a massive super strong green being. He struggles to control his rage while being hunted and learning what it means to be human (2008).",
     4: "A short live action story set in a military science fiction universe following soldiers through a tense mission that reveals loyalty and sacrifice (2012).",
     5: "A tormented vigilante adopts a masked identity to fight crime in a corrupt city, facing moral dilemmas and a rising criminal underworld (2008).",
-    6: "Human pilots operate giant robots to defend Earth from enormous monsters; the film focuses on teamwork and large scale action (2013).",
+    6: "Human pilots operate giant robots to defend Earth from enormous monsters (2013).",
     7: "Transforming alien robots arrive on Earth and clash with each other while humans are drawn into their ancient conflict (2007).",
-    8: "A serialized live-action TV adaptation set in a post-apocalyptic world following characters who navigate scarce resources, shifting alliances and the consequences of survival (2024).",
-    9: "A colourful team of young heroes use martial arts and teamwork to protect their city from supernatural threats (2005).",
-    10: "A family friendly animated comedy about small mischievous characters whose chaotic behaviour leads to funny and heartwarming moments (2010).",
-    11: "A clumsy food loving panda is chosen as the unlikely hero who must learn kung fu and protect his community (2008).",
+    8: "A vault dweller must go out into a post nuclear world and experience life on the surface for the first time (2024).",
+    9: "Go Go power rangers (2005).",
+    10: "Minions or smth idk (2010).",
+    11: "A clumsy food loving panda is chosen as the unlikely hero who must learn kung fu and protect his community from a evil tiger or smth (2008).",
     12: "In a future where apes gain higher intelligence tensions between humans and apes escalate into conflict (2011).",
-    13: "A moody noir style science fiction about a detective hunting synthetic humans; explores identity and memory (1982).",
-    14: "A visually striking sequel that follows a new investigator as she uncovers the consequences of advanced memory and identity technologies (2017).",
-    15: "A gritty character study of a troubled loner whose descent into violence exposes social fractures (2019).",
-    16: "Set on a lush alien world this epic follows humans and native inhabitants as they clash over resources and survival (2009).",
-    17: "A high school chemistry teacher facing financial pressure turns to producing illegal drugs; the series follows his moral decline (2008).",
-    18: "A young farm boy is swept into a galactic conflict and joins a rebellion against an oppressive empire (1977).",
+    13: "A moody noir style science fiction about a detective hunting synthetic humans (1982).",
+    14: "A visually striking sequel that follows a new investigator as he uncovers the consequences of advanced memory and identity technologies (2017).",
+    15: "A man breaks down due to the world around him, turning into something, like a joke (2019).",
+    16: "Bad humans try to invade ladn owned by tall blue aliens (2009).",
+    17: "A high school chemistry teacher facing financial pressure turns to producing illegal drugs (2008).",
+    18: "A young farm boy is dragged into a conflict with the terror fueled empire (1977).",
     19: "During World War II a squad undertakes a dangerous mission to rescue one paratrooper behind enemy lines (1998).",
-    20: "A freed slave becomes a skilled bounty hunter and embarks on a violent quest for justice and freedom (2012).",
-    21: "A lone cop battles terrorists who seize control of a skyscraper in a tense action-packed fight to save hostages (1988).",
-    22: "A fast paced franchise centred on street racing, family loyalty and escalating action set pieces (2001).",
-    23: "Two mismatched undercover cops return to high school to investigate a drug ring, mixing slapstick comedy with action (2012).",
-    24: "A blockbuster crossover where a group of superheroes must combine their strengths to stop a global threat (2012).",
-    25: "In a dystopian future teenagers are forced into a televised survival contest where alliances and courage determine who survives (2012).",
-    26: "A small waste-collecting robot is left alone on Earth and gradually develops personality and emotion (2008).",
-    27: "Mutants from different eras must join forces to prevent a catastrophic future, blending time travel stakes with personal redemption arcs (2014)."
+    20: "A freed slave becomes a skilled bounty hunter and goes on a violent quest for justice and freedom (2012).",
+    21: "A lone cop fights terrorists who seize control of a skyscraper in a tense action-packed fight to save hostages (1988).",
+    22: "Cars go fast, and they  have race wars or smth (2001).",
+    23: "Two bad cops, are selected to return to highschool undercover and bust a drug ring (2012).",
+    24: "The Avengers form and fight a evil and tough foe (2012).",
+    25: "In the grim future teenagers are forced to fight each other or smth 2012).",
+    26: "A waste collecting robot gets picked up and becomes the true hero of earth! (2008).",
+    27: "The X-Men time travel (2014)."
 }
 
 MOVIE_YEARS = {
@@ -152,4 +152,5 @@ def review_card(title, rating, body, author, date):
       <div class="meta">by {author} on {date}</div>
       <div class="body">{body}</div>
     </div>
+
     """
