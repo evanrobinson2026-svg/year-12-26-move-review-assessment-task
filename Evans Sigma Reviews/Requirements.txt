@@ -1,0 +1,4 @@
+Flask
+Werkzeug
+Flask-WT optional
+Pillow  optional

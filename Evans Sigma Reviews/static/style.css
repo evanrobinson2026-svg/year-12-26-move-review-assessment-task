@@ -1,0 +1,199 @@
+:root{
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#1f6feb;
+  --accent-contrast:#ffffff;
+  --radius:8px;
+  --shadow:0 6px 18px rgba(16,24,40,0.06);
+  --max-width:1100px;
+  --thumb-w:96px;
+  --thumb-h:144px;
+  --gap:12px;
+  --base-font:16px;
+  --font-stack:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font-stack);
+  font-size:var(--base-font);
+  line-height:1.45;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  background:#000;
+  color:#fff;
+  padding:8px 12px;
+  z-index:1000;
+}
+.skip-link:focus{
+  left:12px;
+  top:12px;
+  width:auto;
+  height:auto;
+  border-radius:6px;
+  text-decoration:none;
+  box-shadow:var(--shadow);
+}
+
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 20px;
+  background:linear-gradient(90deg,#fff,#fbfdff);
+  border-bottom:1px solid rgba(16,24,40,0.04);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.brand h1{margin:0;font-size:1.05rem}
+.nav{font-size:0.95rem}
+
+.container{
+  max-width:var(--max-width);
+  margin:24px auto;
+  padding:0 18px;
+}
+
+.summary{
+  background:var(--card);
+  padding:16px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  margin-bottom:16px;
+}
+
+.layout{
+  display:grid;
+  grid-template-columns:1fr 280px;
+  gap:18px;
+  align-items:start;
+}
+.main{display:grid;gap:var(--gap)}
+.sidebar{padding:12px;background:var(--card);border-radius:8px;box-shadow:var(--shadow)}
+
+.card{
+  background:var(--card);
+  border-radius:8px;
+  padding:10px;
+  box-shadow:var(--shadow);
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.card:hover{transform:translateY(-4px)}
+
+.card-with-thumb{
+  display:flex;
+  align-items:center;
+  gap:var(--gap);
+  padding:8px;
+  border-radius:6px;
+  background:var(--card);
+  box-shadow:none;
+  text-decoration:none;
+}
+.card-with-thumb a.card-link{display:flex;align-items:center;width:100%;color:inherit;text-decoration:none}
+.card-with-thumb .thumb{
+  width:var(--thumb-w);
+  height:var(--thumb-h);
+  flex:0 0 auto;
+  overflow:hidden;
+  border-radius:6px;
+  background:#eee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.card-with-thumb .thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.card-with-thumb .card-body{flex:1 1 auto;min-width:0}
+.title-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  justify-content:space-between;
+  width:100%;
+}
+.card-with-thumb .card-title{
+  margin:0;
+  font-size:1rem;
+  line-height:1.2;
+  color:#111827;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.movie-year{
+  font-size:0.85rem;
+  color:var(--muted);
+  background:rgba(16,24,40,0.04);
+  padding:4px 8px;
+  border-radius:6px;
+  flex:0 0 auto;
+  white-space:nowrap;
+}
+
+.poster img{
+  max-width:220px;
+  width:100%;
+  height:auto;
+  border-radius:6px;
+  box-shadow:var(--shadow);
+  display:block;
+  margin-bottom:12px;
+}
+
+.reviews{display:grid;gap:12px}
+.review{background:var(--card);padding:12px;border-radius:8px;box-shadow:var(--shadow)}
+.review-head{display:flex;justify-content:space-between;align-items:center}
+.meta{font-size:0.85rem;color:var(--muted);margin-top:6px;margin-bottom:8px}
+.body{white-space:pre-wrap}
+
+.form label{display:block;margin-bottom:10px}
+.form input,.form textarea{width:100%;padding:8px;border:1px solid rgba(16,24,40,0.06);border-radius:6px}
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:var(--accent-contrast);
+  padding:8px 12px;
+  border-radius:6px;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+}
+.btn:focus, a:focus, button:focus{
+  outline:3px solid rgba(31,111,235,0.25);
+  outline-offset:2px;
+}
+.mini-login input{display:block;margin-bottom:8px;padding:8px;width:100%;border-radius:6px;border:1px solid rgba(16,24,40,0.06)}
+
+.message{padding:18px;text-align:center}
+
+@media (max-width:920px){
+  .layout{grid-template-columns:1fr 240px}
+}
+@media (max-width:720px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{order:2}
+  :root{--thumb-w:72px;--thumb-h:108px}
+  .title-row{gap:8px}
+  .movie-year{font-size:0.8rem;padding:3px 6px}
+}

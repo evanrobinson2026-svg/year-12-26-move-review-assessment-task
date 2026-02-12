@@ -1,0 +1,9 @@
+{
+  "name": "Evans Move Reviews",
+  "short_name": "Reviews",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#333333",
+  "icons": []
+}
